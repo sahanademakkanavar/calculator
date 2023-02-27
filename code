@@ -1,0 +1,99 @@
+
+    def method_1(self):
+        text = self.label.text()
+        self.label.setText(text + "1")
+
+    def method_2(self):
+        text = self.label.text()
+        self.label.setText(text + "2")
+
+    def method_3(self):
+        text = self.label.text()
+        self.label.setText(text + "3")
+
+    def method_4(self):
+        text = self.label.text()
+        self.label.setText(text + "4")
+
+    def method_5(self):
+        text = self.label.text()
+        self.label.setText(text + "5")
+
+    def method_6(self):
+        text = self.label.text()
+        self.label.setText(text + "6")
+
+    def method_7(self):
+        text = self.label.text()
+        self.label.setText(text + "7")
+
+    def method_8(self):
+        text = self.label.text()
+        self.label.setText(text + "8")
+
+    def method_9(self):
+        text = self.label.text()
+        self.label.setText(text + "9")
+
+    def method_zero(self):
+        text = self.label.text()
+        self.label.setText(text + "0")
+
+    def method_point(self):
+        text = self.label.text()
+        self.label.setText(text + ".")
+
+    def method_plus(self):
+        text = self.label.text()
+        self.label.setText(text + "+")
+
+    def method_min(self):
+        text = self.label.text()
+        self.label.setText(text + "-")
+
+    def method_mult(self):
+        text = self.label.text()
+        self.label.setText(text + "*")
+
+    def method_div(self):
+        text = self.label.text()
+        self.label.setText(text + "/")
+
+    def method_clear(self):
+        self.label.setText("")
+
+    def method_del(self):
+        text = self.label.text()
+        self.label.setText(text[:len(text) - 1])
+
+    def method_equal(self):
+        text = self.label.text()
+
+        try:
+            ans = eval(text)
+            self.label.setText(str(ans))
+        except:
+            self.label.setText("Wrong Input")
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "calculator"))
+        self.push_3.setText(_translate("MainWindow", "3"))
+        self.push_min.setText(_translate("MainWindow", "-"))
+        self.push_plus.setText(_translate("MainWindow", "+"))
+        self.push_div.setText(_translate("MainWindow", "/"))
+        self.push_mult.setText(_translate("MainWindow", "x"))
+        self.push_equal.setText(_translate("MainWindow", "="))
+        self.push_del.setText(_translate("MainWindow", "Del"))
+        self.push_5.setText(_translate("MainWindow", "5"))
+        self.push_2.setText(_translate("MainWindow", "2"))
+        self.push_4.setText(_translate("MainWindow", "4"))
+        self.push_6.setText(_translate("MainWindow", "6"))
+        self.push_8.setText(_translate("MainWindow", "8"))
+        self.push_7.setText(_translate("MainWindow", "7"))
+        self.push_point.setText(_translate("MainWindow", "."))
+        self.push_9.setText(_translate("MainWindow", "9"))
+        self.push_zero.setText(_translate("MainWindow", "0"))
+        self.push_1.setText(_translate("MainWindow", "1"))
+        self.label.setText(_translate("MainWindow", "0"))
+        self.push_clear.setText(_translate("MainWindow", "Clear"))
